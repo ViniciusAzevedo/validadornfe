@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method="POST" action="/validador")
+    label(for='txtxml') XML
+    br
+    textarea(placeholder='Informe o xml', name="txtxml", rows=30, cols=100)
+    br
+    button(type='submit') Enviar
